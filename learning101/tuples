@@ -1,0 +1,26 @@
+# Determination of length of the list
+weapons = ['pan', 'assult rifle', 'shotgun', 'pistol'] # using len() method we can print numbers of items in the lists.
+print(len(weapons))
+
+
+
+# working with tuples
+animals = ('dog', 'cat','tiger','elephant') # like lists tuples also collection of items. lists use square bracket whereas tuples use parenthese.
+print(animals)
+
+# determination of length of the tuples
+animals = ('dog', 'cat','tiger','elephant')
+print(len(animals))
+
+# we can call items using negative index no.
+weather = ('summer','winter','spring', 'atumn')
+print(weather[-1])
+print(weather[-2])
+
+# Using a range of indexes we can print the items in that range.
+sports = ('cricket','football', 'basketball', 'volleyball', 'kabaddi')
+print(sports[1:5])
+
+sports = ('cricket','football', 'basketball', 'volleyball', 'kabaddi')
+sports[0] = 'ha du du' # you can't change the items in tuples.
+print(sports)
