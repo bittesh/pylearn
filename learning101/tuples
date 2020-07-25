@@ -1,0 +1,198 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "B2I.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f2cSLDbkd2Lb",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "0bbfb4b7-6230-4bce-aaf7-e6252b71c4ea"
+      },
+      "source": [
+        "# Determination of length of the list\n",
+        "weapons = ['pan', 'assult rifle', 'shotgun', 'pistol'] # using len() method we can print numbers of items in the lists.\n",
+        "print(len(weapons))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fQpQjFNWEK-d",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NJAhW8qAolO5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "ee7060fe-361b-42ce-f7d6-f4ffe7a81e31"
+      },
+      "source": [
+        "# working with tuples\n",
+        "animals = ('dog', 'cat','tiger','elephant') # like lists tuples also collection of items. lists use square bracket whereas tuples use parenthese.\n",
+        "print(animals)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('dog', 'cat', 'tiger', 'elephant')\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6dGLDdhedDOA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "a5ca1a53-e92d-4d80-e4fa-7748524d6666"
+      },
+      "source": [
+        "# determination of length of the tuples\n",
+        "animals = ('dog', 'cat','tiger','elephant')\n",
+        "print(len(animals))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5umffIbUespl",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "1e44ea0f-9a86-4d7d-d208-9f75af69bcc2"
+      },
+      "source": [
+        "# we can call items using negative index no.\n",
+        "weather = ('summer','winter','spring', 'atumn')\n",
+        "print(weather[-1])\n",
+        "print(weather[-2])\n"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "atumn\n",
+            "spring\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZgMkE3rxgzcs",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "2543e0d6-7382-4ea6-b6a3-112840e1d9b2"
+      },
+      "source": [
+        "# Using a range of indexes we can print the items in that range.\n",
+        "sports = ('cricket','football', 'basketball', 'volleyball', 'kabaddi')\n",
+        "print(sports[1:5])\n"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('football', 'basketball', 'volleyball', 'kabaddi')\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3pw_gG_6iaBA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 209
+        },
+        "outputId": "e8c56cf6-0886-4a6f-c007-72d69a664107"
+      },
+      "source": [
+        "sports = ('cricket','football', 'basketball', 'volleyball', 'kabaddi')\n",
+        "sports[0] = 'ha du du' # you can't change the items in tuples.\n",
+        "print(sports)"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-12-6b7eff9fb9f4>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0msports\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m'cricket'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'football'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'basketball'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'volleyball'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'kabaddi'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0msports\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'ha du du'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msports\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ]
+    }
+  ]
+}
